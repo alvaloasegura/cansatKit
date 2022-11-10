@@ -11,3 +11,9 @@ libraries I used:
 
 - [Adafruit BMP085/BMP180](https://github.com/adafruit/Adafruit-BMP085-Library)
 
+Please use these library files. Or add the following line of code for I2C bus initialization:
+
+```C
+_wire->setClock(100000);
+_wire->setWireTimeout(3000, true);
+```
